@@ -23,7 +23,7 @@ Resources:
       InstanceType: t2.micro
       KeyName: Ref keyName
       SecurityGroupIds: 
-        !Ref mySecGrp
+        - !Ref mySecGrp
       Tags: 
         - Key: Name
           Value: !Sub Web Server of ${AWS::StackName} Stack
